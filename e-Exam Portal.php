@@ -42,14 +42,9 @@ session_start();
       <div class="container-fluid">
       <a class="navbar-brand" href="e-Exam Portal.php">e-Exam Portal</a>
 
-        <ul class="navbar-nav mr-auto">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0 mr-4" type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </ul>
-        <a class="navbar-brand" href="#"><?php if(isset($_SESSION['user_id'])): echo "Hi, ", $user_data['user_name']; endif; ?></a>
         <div class="form-inline my-2 my-lg-0">
+        <a class="navbar-brand" href="#"><?php if(isset($_SESSION['user_id'])): echo "Hi, ", $user_data['user_name']; endif; ?></a>
+        
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <?php if(isset($_SESSION['user_id'])): ?>
